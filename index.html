@@ -36,20 +36,38 @@
 
       <p><b>일시</b> 9월 22일 (주일) 오후 3시 20분 (1시간예상)</p>
       <p><b>장소</b> 서울평강교회 5층 소예배실</p>
-      <div id="map"></div>
+      <!-- <div id="map"></div> -->
+<!-- * 카카오맵 - 지도퍼가기 -->
+<!-- 1. 지도 노드 -->
+<div id="daumRoughmapContainer1725283903449" class="root_daum_roughmap root_daum_roughmap_landing"></div>
 
-      <script>
+<!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1725283903449",
+		"key" : "2kirg",
+		// "mapWidth" : "",
+		"mapHeight" : "260"
+	}).render();
+</script>
+      <!-- <script>
         // 지도를 생성합니다.
         var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
             mapOption = { 
-                center: new kakao.maps.LatLng(37.514865, 126.912520), // 서울특별시 영등포구 신길로 27의 좌표
+                center: new kakao.maps.LatLng(37.4949254, 126.9083652), // 서울특별시 영등포구 신길로 27의 좌표
                 level: 3 // 지도의 확대 레벨
             };
 
         var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다.
 
         // 마커를 생성합니다.
-        var markerPosition  = new kakao.maps.LatLng(37.514865, 126.912520); 
+        var markerPosition  = new kakao.maps.LatLng(37.4949254, 126.9083652); 
 
         var marker = new kakao.maps.Marker({
             position: markerPosition
@@ -57,7 +75,7 @@
 
         // 마커를 지도 위에 표시합니다.
         marker.setMap(map);
-    </script>
+    </script> -->
       <p><b>대상</b> 고3 학생 및 학부모와 형제, 자매</p>
     </div>
     <footer>에이레네 고등부</footer>
