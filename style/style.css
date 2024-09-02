@@ -39,10 +39,11 @@ p {
 
 b {
     display: block;
-    width: 60px;
+    width: 80px;
     padding: 4px 8px;
     margin: 20px auto 10px;
     font-size: 18px;
+    text-align: center;
     font-weight: 600;
     background-color: #f951a0;
     color: #fff;
@@ -62,4 +63,11 @@ footer {
     color: #fff;
     padding: 8px 0;
     text-align: center;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin: 10px 20px;
+    color: #333;
 }
