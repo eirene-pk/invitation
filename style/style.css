@@ -68,6 +68,6 @@ footer {
 a {
     display: block;
     text-align: center;
-    margin: 10px 20px;
+    margin: 10px auto 20px;
     color: #333;
 }
